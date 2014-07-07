@@ -2,7 +2,7 @@ class ItauSmsParser
 
   def parse(text_line)
     simple_line = ""
-    linha_ja_processada = /(\d{2})\/(\d{2})\/(\d{4});(.+?);(.+?);(.+)?/
+    linha_ja_processada = /(\d{2})\/(\d{2})\/(\d{4});(.+?);(.+?)(;.+)?/
     
     return text_line if linha_ja_processada.match(text_line)
     
