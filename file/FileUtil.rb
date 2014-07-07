@@ -6,7 +6,8 @@ class FileUtil
     File.open(file_name) do |file|
       parser = ItauSmsParser.new
       while line = file.gets
-          conteudo_simplificado << parser.parse(line)
+          linha_simplificada = parser.parse(line)
+          conteudo_simplificado << linha_simplificada if linha_simplificada
       end
     end
     conteudo_simplificado  
