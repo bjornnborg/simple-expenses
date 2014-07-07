@@ -31,7 +31,6 @@ class ExcelUtil
       expressao += "(#{colunas[indice_valor]}#{inicio}:#{colunas[indice_valor]}#{fim})"
       expressao += ")"
       expressoes[cat] = expressao
-      puts expressao
     end
     expressoes
   end
