@@ -1,0 +1,16 @@
+2014-06-06	00:12:12	in	25001	25001	Compra aprovada no PERSON VISA PLAT p/ REGINA D C SILVA - RIACHUELO SP TAMB valor RS 43,80 em 05/06/2014 as 15h52.
+2014-06-06	00:14:08	in	25001	25001	Compra aprovada no PERSON VISA PLAT p/ REGINA D C SILVA - BFB TAMBORE FARMAIS valor RS 95,26 em 05/06/2014 as 15h59.
+2014-06-06	06:23:20	in	25001	25001	Compra aprovada no seu PERSON VISA PLAT final 8008 - SOFTCOM TECHNOLOGY CONSUL valor US 58,45 em 06/06, as 06h23.
+2014-06-06	19:05:45	in	25001	25001	Compra aprovada no seu PERSON VISA PLAT final 8008 - MARIA JOAO valor RS 51,40 em 06/06, as 13h45.
+2014-06-06	19:43:43	in	25001	25001	O total da fatura do seu PERSON VISA PLAT com vencimento em 18/06 e de RS 99.999,06. Compras a partir de 05/06 entram nos proximos lancamentos.
+2014-06-06	20:32:37	in	25001	25001	Compra aprovada no seu PERSON VISA PLAT final 8008 - PIZZA HUT valor RS 73,80 em 06/06, as 20h17.
+2014-06-07	06:49:51	in	25001	25001	Itau Personnalite: o saldo de sua conta corrente  XXX95-5 e de R$ -28,60 em 06/06/2014 as 09:28.
+2014-06-07	06:58:22	in	25001	25001	Itau Personnalite: o pagamento de TITULOS foi efetuado no valor de R$999,37 em 06/06 as 18:00. Conta XXX95-5.
+2014-06-07	07:02:37	in	25001	25001	Itau Personnalite: o pagamento de ELET.PAULO 819028100 foi efetuado no valor de R$77,50 em 06/06 as 23:57. Conta XXX95-5.
+2014-06-07	07:16:58	in	25001	25001	Itau Personnalite: o pagamento de TITULOS foi efetuado no valor de R$70,68 em 06/06 as 18:03. Conta XXX95-5.
+2014-06-07	07:17:28	in	25001	25001	Itau Personnalite: realizado DOC no valor de R$999.999,42 em 06/06 18:09. Conta debitada: XXX95-5.
+2014-06-12	22:21:44	in	25001	25001	Itau Personnalite: realizada transferencia entre contas no valor de R$72,00 em 12/06 as 22:21. Conta debitada: XXX95-5.
+2014-06-17	00:12:47	in	25001	25001	ITAU: iToken 621308, Data: 17/06/2014, Hora: 00:12:41h.
+17/06/2014;Alguma transação não classificada;-100
+17/06/2014;Alguma transação classificada;-100;vestuário
+2014-07-03	21:04:00	in	25001	25001	ITAU PERSONNALITE:   SAQUE APROVADO 03/07 21:03:45 R$ 100,00 Local: CX ITAU AL MADEIRA 1.
