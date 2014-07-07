@@ -6,7 +6,7 @@ class ItauSmsParser
     
     return text_line if linha_ja_processada.match(text_line)
     
-    debito = (text_line =~ /compra|pagamento|\sdoc\s/i)
+    debito = (text_line =~ /compra|pagamento|\sdoc\s|transferencia/i)
     transacao_cartao = /(\d{4})-(\d{2})-(\d{2}).+?-(.+?)valor.+RS(.+?)em.+/
     pagamento_titulos = /(\d{4})-(\d{2})-(\d{2}).+?o\spagamento\sde(.+?)foi.+?valor.+R.(.+?)em.+/
     doc_transferencia = /(\d{4})-(\d{2})-(\d{2}).+?realizad.(.+?)\s.+?valor.+R.(.+?)em.+/

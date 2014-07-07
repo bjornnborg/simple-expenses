@@ -37,6 +37,13 @@ describe ItauSmsParser do
       linha_simplificada = parser.parse(linha_complexa)
       "07/06/2014;DOC;-999.999,42;".should eq linha_simplificada
     end
+    
+    it "Deve simplificar linhas de transferências" do
+      linha_complexa = "2014-06-12	22:21:44	in	25001	25001	Itau Personnalite: realizada transferencia entre contas no valor de R$72,00 em 12/06 as 22:21. Conta debitada: XXX95-5."
+      parser = ItauSmsParser.new
+      linha_simplificada = parser.parse(linha_complexa)
+      "12/06/2014;transferencia;-72,00;".should eq linha_simplificada
+    end
 
   
   end
