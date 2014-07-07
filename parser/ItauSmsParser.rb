@@ -11,7 +11,7 @@ class ItauSmsParser
       end
       simple_line += "#{match[5].strip};"
     end
-    simple_line
+    simple_line.empty? ? nil : simple_line
   end
 
 end
