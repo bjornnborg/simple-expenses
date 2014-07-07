@@ -13,6 +13,7 @@ describe FileUtil do
       content.size.should be_equal 13
       content.last.should eq "03/07/2014;SAQUE;-100,00;"
       content[6].should eq "07/06/2014;ELET.PAULO 819028100;-77,50;"
+      content[11].split(";")[3].should eq "vestuário"
     end
 
     it "Não deve retornar linhas vazias" do
