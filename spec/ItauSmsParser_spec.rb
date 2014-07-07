@@ -41,7 +41,16 @@ describe ItauSmsParser do
       parser = ItauSmsParser.new
       linha_simplificada = parser.parse(linha_complexa)
       linha_simplificada == nil
-    end  
+    end
+    
+    it "Deve retornar nil para mensagem semanal de saldo" do
+      linha_complexa = "2014-06-07	06:49:51	in	25001	25001	Itau Personnalite: o saldo de sua conta corrente  XXX95-5 e de R$ -328,60 em 06/06/2014 as 09:28."
+      parser = ItauSmsParser.new
+      linha_simplificada = parser.parse(linha_complexa)
+      linha_simplificada == nil
+    end
+    
+    
   end
   
   context "Linhas já processadas" do
