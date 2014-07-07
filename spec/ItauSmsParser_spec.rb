@@ -51,6 +51,15 @@ describe ItauSmsParser do
       linha_simplificada = parser.parse(linha_complexa)
       "03/07/2014;SAQUE;-100,00;".should eq linha_simplificada
     end
+    
+    it "Deve simplificar linhas de transações internacionais" do
+      linha_complexa = "2014-06-06	06:23:20	in	25001	25001	Compra aprovada no seu PERSON VISA PLAT final 8008 - SOFTCOM TECHNOLOGY CONSUL valor US 58,45 em 06/06, as 06h23."
+      parser = ItauSmsParser.new
+      linha_simplificada = parser.parse(linha_complexa)
+      "06/06/2014;SOFTCOM TECHNOLOGY CONSUL;-58,45;".should eq linha_simplificada
+    end
+    
+    
 
   
   end
