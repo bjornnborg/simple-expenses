@@ -11,4 +11,6 @@
 2014-06-07	07:17:28	in	25001	25001	Itau Personnalite: realizado DOC no valor de R$999.999,42 em 06/06 18:09. Conta debitada: XXX95-5.
 2014-06-12	22:21:44	in	25001	25001	Itau Personnalite: realizada transferencia entre contas no valor de R$72,00 em 12/06 as 22:21. Conta debitada: XXX95-5.
 2014-06-17	00:12:47	in	25001	25001	ITAU: iToken 621308, Data: 17/06/2014, Hora: 00:12:41h.
+17/06/2014;Alguma transação não classificada;-100
+17/06/2014;Alguma transação classificada;-100;vestuário
 2014-07-03	21:04:00	in	25001	25001	ITAU PERSONNALITE:   SAQUE APROVADO 03/07 21:03:45 R$ 100,00 Local: CX ITAU AL MADEIRA 1.
