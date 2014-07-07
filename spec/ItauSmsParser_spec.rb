@@ -43,7 +43,14 @@ describe ItauSmsParser do
       parser = ItauSmsParser.new
       linha_simplificada = parser.parse(linha_complexa)
       "07/06/2014;TITULOS;-57,15;".should eq linha_simplificada
-    end            
+    end
+    
+    it "Deve retornar linhas já processadas e categorizadas da forma como estão" do
+      linha_complexa = "07/06/2014;TITULOS;-57,15;Carro"
+      parser = ItauSmsParser.new
+      linha_simplificada = parser.parse(linha_complexa)
+      "07/06/2014;TITULOS;-57,15;Carro".should eq linha_simplificada
+    end
   
   end
 
