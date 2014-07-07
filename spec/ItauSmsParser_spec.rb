@@ -16,13 +16,7 @@ describe ItauSmsParser do
       linha_simplificada = parser.parse(linha_complexa)
       "06/06/2014;BFB TAMBORE FARMAIS;-95,26;".should eq linha_simplificada
     end
-   
-    it "Deve retornar nil para mensagem de fechamento de fatura" do
-      linha_complexa = "2014-06-06	19:43:43	in	25001	25001	O total da fatura do seu PERSON VISA PLAT com vencimento em 18/06 e de RS 999.999,06. Compras a partir de 05/06 entram nos proximos lancamentos."    
-      parser = ItauSmsParser.new
-      linha_simplificada = parser.parse(linha_complexa)
-      linha_simplificada == nil
-    end
+
     
     it "Deve simplificar linhas de pagamento de títulos de concessionária" do
       linha_complexa = "2014-06-07	07:02:37	in	25001	25001	Itau Personnalite: o pagamento de ELET.PAULO 819028100 foi efetuado no valor de R$77,50 em 06/06 as 23:57. Conta XXX95-5."
@@ -37,7 +31,20 @@ describe ItauSmsParser do
       linha_simplificada = parser.parse(linha_complexa)
       "07/06/2014;TITULOS;-57,15;".should eq linha_simplificada
     end
-    
+
+  
+  end
+  
+  context "Linhas descartadas" do
+    it "Deve retornar nil para mensagem de fechamento de fatura" do
+      linha_complexa = "2014-06-06	19:43:43	in	25001	25001	O total da fatura do seu PERSON VISA PLAT com vencimento em 18/06 e de RS 999.999,06. Compras a partir de 05/06 entram nos proximos lancamentos."    
+      parser = ItauSmsParser.new
+      linha_simplificada = parser.parse(linha_complexa)
+      linha_simplificada == nil
+    end  
+  end
+  
+  context "Linhas já processadas" do
     it "Deve retornar linhas já processadas da forma como estão" do
       linha_complexa = "07/06/2014;TITULOS;-57,15;"
       parser = ItauSmsParser.new
@@ -50,8 +57,7 @@ describe ItauSmsParser do
       parser = ItauSmsParser.new
       linha_simplificada = parser.parse(linha_complexa)
       "07/06/2014;TITULOS;-57,15;Carro".should eq linha_simplificada
-    end
-  
+    end  
   end
 
 end
