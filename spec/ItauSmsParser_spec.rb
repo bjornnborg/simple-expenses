@@ -50,6 +50,13 @@ describe ItauSmsParser do
       linha_simplificada == nil
     end
     
+    it "Deve retornar nil para mensagem de iToken" do
+      linha_complexa = "2014-06-17	00:12:47	in	25001	25001	ITAU: iToken 621308, Data: 17/06/2014, Hora: 00:12:41h."
+      parser = ItauSmsParser.new
+      linha_simplificada = parser.parse(linha_complexa)
+      linha_simplificada == nil
+    end
+    
     
   end
   
